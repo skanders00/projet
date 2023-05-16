@@ -20,14 +20,17 @@ class VinylMix
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $description = null;
 
-    #[ORM\Column(type: Types::TEXT, nullable: true)]
-    private ?string $trackCount = null;
+    #[ORM\Column]
+    private ?int $trackCount = null;
 
     #[ORM\Column(length: 255)]
     private ?string $genre = null;
 
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
+
+    #[ORM\Column]
+    private ?int $votes = null;
 
     public function getId(): ?int
     {
@@ -58,12 +61,12 @@ class VinylMix
         return $this;
     }
 
-    public function getTrackCount(): ?string
+    public function getTrackCount(): ?int
     {
         return $this->trackCount;
     }
 
-    public function setTrackCount(?string $trackCount): self
+    public function setTrackCount(int $trackCount): self
     {
         $this->trackCount = $trackCount;
 
@@ -93,4 +96,18 @@ class VinylMix
 
         return $this;
     }
+
+    public function getVotes(): ?int
+    {
+        return $this->votes;
+    }
+
+    public function setVotes(int $votes): self
+    {
+        $this->votes = $votes;
+
+        return $this;
+         __construct().
+    }
+     
 }
