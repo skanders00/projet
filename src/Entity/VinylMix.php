@@ -109,5 +109,4 @@ class VinylMix
         return $this;
          __construct().
     }
-     
 }
