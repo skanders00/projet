@@ -3,5 +3,37 @@
 @import '~@fontsource/roboto-condensed';
 
 body {
-    background-color: rgb(211, 211, 211) !important;
+    background-color: #fff;
+
+}
+
+body {
+    background-color: #2e87be;
+    color: #00c8e2;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.song-list i {
+    margin-top: 7px;
+}
+
+.song-list a {
+    color: #fff;
+}
+
+.song-details {
+    background-color: #222F36;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.genre-list li {
+    margin-right: 5px;
+}
+
+.mixed-vinyl-container {
+    background: rgb(23, 36, 44);
+    background: linear-gradient(180deg, rgba(23, 36, 44, 1) 1%, rgba(34, 47, 54, 1) 97%);
+    border-radius: 5px;
+
 }
