@@ -47,8 +47,11 @@
 					<div class="mixed-vinyl-container p-3 text-center">
 						<img src="https://via.placeholder.com/300" data-src="https://via.placeholder.com/300" alt="Square placeholder img">
 						<p class="mt-2">
-							<strong>Spice Grills - Summer Tunes</strong>
+							<a href="{{ path('app_mix_show', { id: mix.id }) }}" class="mixed-vinyl-container p-3 text-center">
+								<strong>{{ mix.title }}</strong>
+							</a>
 						</p>
+
 						<span>10 Tracks</span>
 						|
 						<span>Pop</span>
