@@ -38,6 +38,13 @@ class VinyMixRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
         }
     }
+    public function findAllOrderedByVotes()
+    {
+        return $this->createQueryBuilder('e')
+            ->orderBy('e.votes', 'DESC')
+            ->getQuery()
+            ->getResult();
+    }
 
 //    /**
 //     * @return VinyMix[] Returns an array of VinyMix objects

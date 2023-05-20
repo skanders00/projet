@@ -109,4 +109,18 @@ class VinylMix
         return $this;
          __construct().
     }
+
+    public function getVotesString(): ?string
+    {
+        return $this->VotesString;
+    }
+
+    public function setVotesString(string $VotesString): self
+    {
+        $this->gVotesString = $VotesString;
+
+        return $this;
+    }
+
+
 }
