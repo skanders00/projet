@@ -29,4 +29,10 @@ class MixController extends AbstractController
             $mix->getTrackCount()
         ));
     }
+    public function show(VinylMix $mix): Response
+    {
+        return $this->render('mix/show.html.twig', [
+            'mix' => $mix,
+        ]);
+    }
 }
