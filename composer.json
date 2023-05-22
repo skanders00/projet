@@ -7,9 +7,12 @@
         "php": ">=8.0.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "babdev/pagerfanta-bundle": "^4.0",
         "doctrine/doctrine-bundle": "^2.9",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.15",
+        "pagerfanta/doctrine-orm-adapter": "^4.1",
+        "pagerfanta/twig": "^4.1",
         "sensio/framework-extra-bundle": "*",
         "stof/doctrine-extensions-bundle": "^1.7",
         "symfony/asset": "6.2.*",
@@ -81,6 +84,7 @@
         "doctrine/doctrine-fixtures-bundle": "*",
         "symfony/debug-bundle": "6.2.*",
         "symfony/stopwatch": "6.2.*",
-        "symfony/web-profiler-bundle": "6.2.*"
+        "symfony/web-profiler-bundle": "6.2.*",
+        "zenstruck/foundry": "^1.32"
     }
 }
