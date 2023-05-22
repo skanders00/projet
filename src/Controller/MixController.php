@@ -59,5 +59,3 @@ class MixController extends AbstractController
         ]);
     }
 }
-
-
